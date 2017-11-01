@@ -1,21 +1,18 @@
 <template>
-  	<div class="header">
-  		这是header
-  	</div>
+  	<home-header></home-header>	
 </template>
 
 <script>
-	import HeaderComponent from "./Header"
-	export default {
-	components:{
-		"home-header":HeaderComponent
+
+import HeaderComponent from "./Header"
+
+export default {
+	components: {
+		"home-header": HeaderComponent
 	}
 }
 </script>
 
 <style>
-	.header{
-		height:71px;
-		background:#00bcd4;
-	}
+	
 </style>

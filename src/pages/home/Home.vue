@@ -15,7 +15,7 @@
 
 <style>
 	.header{
-		height:70px;
+		height:71px;
 		background:#00bcd4;
 	}
 </style>

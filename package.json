@@ -2,7 +2,7 @@
   "name": "laizhe",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "mmh",
+  "author": "taotaow2n <1669010607@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

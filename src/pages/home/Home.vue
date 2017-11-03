@@ -1,25 +1,22 @@
 <template>
-
-  	<div>
-  		<home-header />
+	<div>
+ 		<home-header/>
  		<swiper-content/>
- 		<menu-content/>
- 		<weekend-list />
+ 		<activity-content/>
  	</div>
 </template>
 
 <script>
 
 import HeaderComponent from "./Header";
-import WeekendList from "./Weekend"; 
 import SwiperComponent from "./Swiper";
-import MenuComponent from "./Menu";
+import ActivityComponent from "./Activity";
+
 export default {
 	components: {
 		"home-header": HeaderComponent,
-		"weekend-list": WeekendList,
 		"swiper-content": SwiperComponent,
-		"menu-content":MenuComponent
+		"activity-content": ActivityComponent
 	}
 }
 </script>

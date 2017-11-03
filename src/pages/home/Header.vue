@@ -1,9 +1,11 @@
 <template>
-  	<header class="header">
+ 	<header class="header">
  		<div class="header-left iconfont icon-fanhui"></div>
- 		<div class="header-title">
- 			输入城市/景点/游玩主题
- 		</div>
+ 		<router-link to="/list">
+	 		<div class="header-title">
+	 			输入城市/景点/游玩主题
+	 		</div>
+ 		</router-link>
  		<div class="header-right">
  			<div class="header-city-wrapper">
  				<span class="header-city">北京</span>
@@ -13,15 +15,17 @@
 </template>
 
 <script>
-export default {
-
-}
+	export default {
+		
+	}
 </script>
 
 <style>
-	.header{
+	
+	.header {
 		height: .88rem;
-		background:#00bcd4;
+		background: #00bcd4;
+		overflow: hidden;
 	}
 	.header-left {
 		float: left;
@@ -62,7 +66,7 @@ export default {
 	}
 	.header-city::after {
 		content: "\0020";
-		position: absolute;
+		position: absolute;		
 		top: .4rem;
 		right: .14rem;
 		width: 0;

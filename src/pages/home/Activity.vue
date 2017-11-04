@@ -73,15 +73,15 @@
 	}
 	.activity-choice{
 		width: 50%;
-		background: url("http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png") no-repeat;
-		background-size:contain;
+		background: url("http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png") no-repeat center center;
+		background-size:auto 100%;
 		border-right: .01rem solid #f1f1f1;
 		
 	}
 	.activity-fall{
 		width: 49%;
-		background: url("http://img1.qunarzz.com/piao/fusion/1710/54/1685d2108b652302.png") no-repeat;
-		background-size:contain;
+		background: url("http://img1.qunarzz.com/piao/fusion/1710/54/1685d2108b652302.png") no-repeat center center;
+		background-size:auto 100%;
 		
 	}
 </style>

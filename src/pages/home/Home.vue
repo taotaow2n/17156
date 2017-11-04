@@ -4,9 +4,8 @@
  		<swiper-content/>
  		<menu-content/>
  		<activity-content/>
- 		<weekend-list />
  		<hot-recommend></hot-recommend>
-
+		<weekend-list />
  	</div>
 </template>
 
@@ -25,11 +24,9 @@ export default {
 	components: {
 		"home-header": HeaderComponent,
 		"swiper-content": SwiperComponent,
-
 		"menu-content":MenuComponent,
 		"hot-recommend":HotRecommendComponent ,
-
-		"activity-content": ActivityComponent，
+		"activity-content": ActivityComponent,
 		"weekend-list": WeekendList
 
 	}

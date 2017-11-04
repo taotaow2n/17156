@@ -2,11 +2,10 @@
 	<div>
  		<home-header/>
  		<swiper-content/>
-
  		<menu-content/>
- 		<hot-recommend></hot-recommend>
-
  		<activity-content/>
+ 		<weekend-list />
+ 		<hot-recommend></hot-recommend>
 
  	</div>
 </template>
@@ -17,9 +16,9 @@ import HeaderComponent from "./Header";
 import SwiperComponent from "./Swiper";
 
 import MenuComponent from "./Menu";
-import HotRecommendComponent from "./HotRecommend";
-
 import ActivityComponent from "./Activity";
+import HotRecommendComponent from "./HotRecommend";
+import WeekendList from "./Weekend"; 
 
 
 export default {
@@ -30,7 +29,8 @@ export default {
 		"menu-content":MenuComponent,
 		"hot-recommend":HotRecommendComponent ,
 
-		"activity-content": ActivityComponent
+		"activity-content": ActivityComponent，
+		"weekend-list": WeekendList
 
 	}
 }

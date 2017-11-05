@@ -69,13 +69,30 @@
 		 			<li>无锡三国城</li>
 		 			<li>分界洲岛</li>
 		 			<li>分界洲岛</li>
+		 			<li>八达岭长城</li>
+		 			<li>狮子林</li>
+		 			<li>无锡三国城</li>
+		 			<li>分界洲岛</li>
+		 			<li>分界洲岛</li>
+		 			<li>分界洲岛</li>
+		 			<li>南山文化旅游区</li>
+		 			<li>槟榔谷黎苗文化区</li>
+		 			<li>八达岭长城</li>
+		 			<li>狮子林</li>
 		 		</ul>
 	 		</div>
+	 	</div>
+	 	<div class="mask" v-show="i">
 	 	</div>
  	</div>
 </template>
 
 <script>
+//	Vue.directive("focus",{
+//		inserted: function(el,bindings) {
+//			console.log(13)
+//		}
+//	})
 	export default {
     	data:function() {
     		return {
@@ -91,12 +108,18 @@
     		handleClick2:function(){
     			this.i = false;
     			this.j = true;
+    		},
+    		enter:function(el){
+    			console.log(el)
     		}
     	}	
 	}
 </script>
 
 <style>
+	html,body {
+		height: 100%;
+	}
 	.travel-placebox {
 		position: relative;
 		background:#eee;
@@ -134,13 +157,16 @@
 		line-height: 0.66rem;
 	}
 	.travel-placecontain {
-		overflow: auto ;
+		//overflow: auto ;
 		background: #eee;
-		padding-bottom: .3rem;
 	}
 	.travel-place {
 		overflow: auto;
 		height: 7rem;
+		position: absolute;
+		z-index: 10;
+		background: #eee;
+		padding-bottom: .2rem;
 	}
 	.travel-placecontain ul li {
 		float:left;
@@ -157,5 +183,12 @@
 		height: 0.66rem;
 		text-align: center;
 		line-height: 0.66rem;
+	}
+	.mask{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.5);
+		z-index: 5;
 	}
 </style>

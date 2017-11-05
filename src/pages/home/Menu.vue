@@ -30,6 +30,22 @@
     				</a>
     			</div>
     		</div>
+<<<<<<< HEAD
+    		<router-link to="/travel">
+    			<div class="swiper-img-con">
+	    			<div class="mp-category-item" data-click="ts_type_nav" data-click-from-value="景点门票" data-click-from-index="0" data-click-dist-city="北京">
+	    				<a href="//touch.piao.qunar.com/touch/list_北京_景点门票.html?cat=from_area%3Dts_type_nav%26from_index%3D0%26from_value%3D%25E6%2599%25AF%25E7%2582%25B9%25E9%2597%25A8%25E7%25A5%25A8%26dist_city%3D%25E5%258C%2597%25E4%25BA%25AC" title="景点门票" mp-role="analytics" data-params="from_area=ts_type_nav&amp;from_index=0&amp;from_value=景点门票&amp;dist_city=北京">
+	    					<div class="mp-category-img-container">
+	    						<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png" alt="景点门票" style="opacity: 1;">
+	    					</div>
+	    					<div class="keywords">一日游</div>
+	    				</a>
+	    			</div>
+    			</div>
+    		</router-link>
+    		
+=======
+    	<router-link to="/travel">
     		<div class="swiper-img-con">
     			<div class="mp-category-item" data-click="ts_type_nav" data-click-from-value="景点门票" data-click-from-index="0" data-click-dist-city="北京">
     				<a href="//touch.piao.qunar.com/touch/list_北京_景点门票.html?cat=from_area%3Dts_type_nav%26from_index%3D0%26from_value%3D%25E6%2599%25AF%25E7%2582%25B9%25E9%2597%25A8%25E7%25A5%25A8%26dist_city%3D%25E5%258C%2597%25E4%25BA%25AC" title="景点门票" mp-role="analytics" data-params="from_area=ts_type_nav&amp;from_index=0&amp;from_value=景点门票&amp;dist_city=北京">
@@ -40,6 +56,8 @@
     				</a>
     			</div>
     		</div>
+    	</router-link>
+>>>>>>> 4f46fc1989ffaa58d40706e1fa0ffa88ba2a07ff
     		<div class="swiper-img-con">
     			<div class="mp-category-item" data-click="ts_type_nav" data-click-from-value="景点门票" data-click-from-index="0" data-click-dist-city="北京">
     				<a href="//touch.piao.qunar.com/touch/list_北京_景点门票.html?cat=from_area%3Dts_type_nav%26from_index%3D0%26from_value%3D%25E6%2599%25AF%25E7%2582%25B9%25E9%2597%25A8%25E7%25A5%25A8%26dist_city%3D%25E5%258C%2597%25E4%25BA%25AC" title="景点门票" mp-role="analytics" data-params="from_area=ts_type_nav&amp;from_index=0&amp;from_value=景点门票&amp;dist_city=北京">

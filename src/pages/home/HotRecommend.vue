@@ -5,8 +5,10 @@
 			<ul class="mp-hot-list">
 				<li class="mp-hot-product">
 					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
 						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4
 							ec482b5722.jpg_140x140_80f63803.jpg" alt="故宫">
+						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
 						<div class="mp-hot-list-title">故宫</div>
@@ -19,8 +21,10 @@
 				</li>
 				<li class="mp-hot-product">
 					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
 						<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img
 							.jpg_140x140_97813766.jpg" alt="八达岭长城">
+						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
 						<div class="mp-hot-list-title">八达岭长城</div>
@@ -33,8 +37,10 @@
 				</li>
 				<li class="mp-hot-product">
 					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
 						<img src="http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_
 							140x140_e20be8e0.jpg" alt="颐和园">
+						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
 						<div class="mp-hot-list-title">颐和园</div>
@@ -47,8 +53,10 @@
 				</li>
 				<li class="mp-hot-product">
 					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
 						<img src="http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg
 							_140x140_b05eb1df.jpg" alt="北京欢乐谷">
+						</router-link >
 					</div>
 					<div class="mp-hot-list-infos">
 						<div class="mp-hot-list-title">北京欢乐谷</div>
@@ -61,8 +69,10 @@
 				</li>
 				<li class="mp-hot-product">
 					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
 						<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_
 							140x140_eae81520.jpg" alt="慕田峪长城">
+						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
 						<div class="mp-hot-list-title">慕田峪长城</div>

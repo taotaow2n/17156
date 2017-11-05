@@ -194,15 +194,15 @@
 		<div class="classify" v-if="show">
 			<ul class="classify-label1">
 				<li class="label1">
-					<p class="iconfont icon-zhuti"></p>
+					<p class="iconfont icon-leimupinleifenleileibie"></p>
 					<p>全部分类</p>
 				</li>
 				<li class="label1">
-					<p class="iconfont icon-shaixuan"></p>
+					<p class="iconfont icon-shaixuan2"></p>
 					<p>筛选</p>
 				</li>
 				<li class="label1">
-					<p class="iconfont icon-paixu"></p>
+					<p class="iconfont icon-paixu1"></p>
 					<p>推荐排序</p>
 				</li>
 			</ul>

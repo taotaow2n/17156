@@ -1,14 +1,13 @@
 <template>
 	<div>
  		<index-header />
- 		<index-swiper />
- 		<index-icon-swiper />
+ 		<index-swiper :swiperInfo="this.$store.state.swiperInfo" />
+ 		<index-icon-swiper :iconSwiperInfo="this.$store.state.iconSwiperInfo"/>
  		<index-activity />
  		<index-hotsale />
  		<index-weekend />
  	</div>
 </template>
-
 <script>
 	import Header from "./components/Header";
 	import Swiper from "./components/Swiper";
@@ -24,7 +23,12 @@
 			"index-activity": Activity,
 			"index-hotsale": Recommend,
 			"index-weekend": WeekendList
-		}	
+		},
+		mounted() {
+			if(!this.$store.state.swiperInfo.length){
+				this.$store.dispatch("getSwiperInfo")
+			}
+		}
 	}
 </script>
 

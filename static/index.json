@@ -1,0 +1,62 @@
+
+{
+	"ret": true,
+	"data": {
+		"swiperInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg",
+			"link": "/list"
+		}, {
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/c5/2b4166f592b33202.jpg_640x200_27b41388.jpg",
+			"link": "/list"
+		}, {
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/16/1d7693c6bd8abd02.png_640x200_43c308dd.png",
+			"link": "/list"
+		}
+		],
+		"iconSwiperInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+			"link": "/travel",
+			"title":"景点门票"
+		}, {
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+			"link": "/travel",
+			"title":"动植物园"
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+			"link": "/travel",
+			"title":"故宫"
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+			"link": "/travel",
+			"title":"一日游"
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+			"link": "/travel",
+			"title":"必游榜单"
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+			"link": "/travel",
+			"title":"秋色美"
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+			"link": "/travel",
+			"title":"游乐场"
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+			"link": "/travel",
+			"title":"泡温泉"
+		}
+		]
+	}
+}

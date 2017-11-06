@@ -1,35 +1,35 @@
 <template>
 	<div>
- 		<index-header />
- 		<index-swiper :swiperInfo="this.$store.state.swiperInfo" />
- 		<index-icon-swiper :iconSwiperInfo="this.$store.state.iconSwiperInfo"/>
- 		<index-activity />
- 		<index-hotsale />
- 		<index-weekend />
+ 		<home-header/>
+ 		<swiper-content/>
+ 		<menu-content />
+ 		<index-weekend :weekendInfo="this.$store.state.weekendInfo" />
  	</div>
 </template>
+
 <script>
-	import Header from "./components/Header";
-	import Swiper from "./components/Swiper";
-	import IconSwiper from "./components/IconSwiper";
-	import Activity from "./components/Activity";
-	import Recommend from "./components/RecommendList";
-	import WeekendList from "./components/WeekendList";
-	export default {
-		components: {
-			"index-header": Header,
-			"index-swiper": Swiper,
-			"index-icon-swiper": IconSwiper,
-			"index-activity": Activity,
-			"index-hotsale": Recommend,
-			"index-weekend": WeekendList
-		},
-		mounted() {
-			if(!this.$store.state.swiperInfo.length){
-				this.$store.dispatch("getSwiperInfo")
-			}
-		}
+
+import HeaderComponent from "./Header";
+import MenuComponent from "./Menu";
+import WeekendList from "./WeekendList"; 
+import SwiperComponent from "./Swiper";
+
+
+export default {
+
+	components: {
+		"home-header": HeaderComponent,
+		"index-weekend": WeekendList,
+		"swiper-content": SwiperComponent,
+		"menu-content":MenuComponent
+	},
+
+	mounted() {
+		if (!this.$store.state.weekendInfo.length) {
+			this.$store.dispatch("getWeekendInfo");
+		}		
 	}
+}
 </script>
 
 <style>

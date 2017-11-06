@@ -1,9 +1,9 @@
 <template>
     <div>
-		<head-image-describe></head-image-describe>
-		<base-info></base-info>
-		<comment-content></comment-content>
-		<inform-content></inform-content>
+		<detali-head-image-describe></detali-head-image-describe>
+		<detali-base-info></detali-base-info>
+		<detali-comment-content></detali-comment-content>
+		<detali-inform-content></detali-inform-content>
 	</div>
 </template>
 
@@ -14,10 +14,10 @@
 	import InformComponent from "./Inform"
 	export default {
 		components:{
-			"head-image-describe":HeadComponent,
-			"base-info":BaseInfoComponent,
-			"comment-content":CommentComponent,
-			"inform-content":InformComponent
+			"detali-head-image-describe":HeadComponent,
+			"detali-base-info":BaseInfoComponent,
+			"detali-comment-content":CommentComponent,
+			"detali-inform-content":InformComponent
 		}
 		
 	}

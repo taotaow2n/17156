@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import List from '@/pages/list/List'
+import Order from '@/pages/order/Order'
 
 Vue.use(Router)
 
@@ -16,6 +17,12 @@ export default new Router({
       path: '/list',
       name: 'list',
       component: List
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: Order
     }
+    
   ]
 })

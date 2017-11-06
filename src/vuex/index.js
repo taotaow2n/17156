@@ -1,30 +1,32 @@
-import Vuex from 'vuex'
 import Vue from 'vue'
+import Vuex from 'vuex'
 import axios from 'axios';
-
 Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		weekendInfo: []
+		swiperInfo: [],
+		iconSwiperInfo:[]
 	},
 	actions: {
-		getWeekendInfo(context) {
+		getSwiperInfo(context) {
 			axios.get('/static/index.json')
-				.then( (response) => {
-					if (response.status === 200) {
-						const {data}  = response.data;
-						//想办法让mutations里的changeWeekendInfo方法执行
-						context.commit("changeWeekendInfo",data.weekendInfo);
-						// this.weekendInfo = data.weekendInfo;
-					}
-				})
+					.then((response)=>{
+						if (response.status === 200) {
+							const {data}  = response.data;
+							context.commit("changeSwiperInfo",data.swiperInfo);
+							context.commit("changeIconSwiperInfo",data.iconSwiperInfo);
+						}
+					})
 		}
 	},
 	mutations: {
-		changeWeekendInfo(state,data) {
-			state.weekendInfo = data;
+		changeSwiperInfo: function(state,data){
+			state.swiperInfo = data
+		},
+		changeIconSwiperInfo: function(state,data){
+			state.iconSwiperInfo = data
 		}
 	},
-	getters: {}
+	getters:{}
 })

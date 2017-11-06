@@ -106,6 +106,10 @@
 	    padding-left: .26rem;
 	    line-height: .8rem;
 	    color: #212121;
+	    overflow: hidden;
+	    width:1.4rem;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
 	}
 	.mp-hot-content{
 		background:#fff;

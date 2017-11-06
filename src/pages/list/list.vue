@@ -157,6 +157,7 @@
   		height:100%;
   		line-height: 100%;
   		text-align: center;
+  		border-right:1px solid #dce5e7;
   	}
   	.mp-hotsearch-typeinner{
   		/*position:absolute;*/
@@ -164,7 +165,6 @@
   		width:100%;
   		height:70%;
   		top:15%;
-  		border-right:1px solid #dce5e7;
   	}
   	.mp-hotsearch-typeicon{
   		width:.3rem;
@@ -172,7 +172,6 @@
   		position:relative;
   		top:50%;
   		margin-top:.1rem;
-  		border-right:1px solid #ccc;
   	}
   	.mp-hotsearch-itemcon{
   		height:1.8rem;

@@ -29,7 +29,7 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	.header {
 		height: .88rem;
 		background: #00bcd4;

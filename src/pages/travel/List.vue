@@ -239,7 +239,7 @@
 		
 	}
 </script>
-<style>
+<style scoped="scoped">
 	html,body{
 		height: 100%;
 		background: #f7f7f7;

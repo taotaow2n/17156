@@ -9,7 +9,7 @@
 			"home-list":List
 		},
 		mounted() {
-			if(this.$store.getters.shouldGetData){
+			if(this.$store.getters.shouldGetListData){
 				this.$store.dispatch("getInfo");
 			}
 			

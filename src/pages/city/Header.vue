@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="city-header-box">
-	 			<span class="city-header-left iconfont icon-fanhui" @click="changeBackBtn" ></span>
+	 			<span class="city-header-left iconfont icon-fanhui" @click="handleBackBtnClick" ></span>
 	 		<div class="city-header-title">
 	 			城市选择
 	 		</div>
@@ -39,7 +39,7 @@
     				show
     			})
 			},
-			changeBackBtn:function(){
+			handleBackBtnClick:function(){
 				this.$router.go(-1);
 			}
 		}

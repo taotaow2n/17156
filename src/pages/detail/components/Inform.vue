@@ -50,7 +50,7 @@
 	.icon-xiangyoujiantou{
 		float:right;
 		color:#9e9e9e;
-		margin-bottom: .1rem;
+		margin-bottom: .1rem;                                    
 
 	}
 </style>

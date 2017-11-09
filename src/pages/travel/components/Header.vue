@@ -1,6 +1,6 @@
 <template>
  	<header class="header">
- 		<div class="header-left iconfont icon-fanhui" @click="changeBackBtn"></div>
+ 		<div class="header-left iconfont icon-fanhui" @click="handleBackBtnClick"></div>
  		<div class="inputbox">
  			<input class="header-input" placeholder="输入城市或景点" @blur="show=false" @focus="show=true" :value="value"/>
  			<span class="iconfont header-delect" v-show="show">&#xe64a;</span>
@@ -25,7 +25,7 @@
 			remove:function(){
 				this.value = "";
 			},
-			changeBackBtn:function(){
+			handleBackBtnClick:function(){
 				this.$router.go(-1);
 			}
 		}

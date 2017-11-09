@@ -13,31 +13,20 @@ export default {
 					.then((response)=>{
 						if (response.status === 200) {
 							const {data}  = response.data;
-							context.commit("changeheaderInfo",data.headerInfo);
-							context.commit("changeBaseInfoone",data.BaseInfoone);
-							context.commit("changeBaseInfotwo",data.BaseInfotwo);
-							context.commit("changeInformInfo",data.InformInfo);
-							context.commit("changeCommentInfo",data.CommentInfo);
+							context.commit("changeDetailInfo",data);
+							
 						}
 					})
 		}
 
 	},
 	mutations:{
-		changeheaderInfo: function(state,data){
-			state.headerInfo = data;
-		},
-		changeBaseInfoone: function(state,data){
-			state.BaseInfoone= data;
-		},
-		changeBaseInfotwo: function(state,data){
-			state.BaseInfotwo= data;
-		},
-		changeInformInfo: function(state,data){
-			state.InformInfo= data;
-		},
-		changeCommentInfo: function(state,data){
-			state.CommentInfo= data;
+		changeDetailInfo: function(state,data){
+				state.headerInfo = data.headerInfo;
+				state.BaseInfoone= data.BaseInfoone;
+				state.BaseInfotwo= data.BaseInfotwo;
+				state.InformInfo= data.InformInfo;
+				state.CommentInfo= data.CommentInfo;
 		}
 	},
 	getters:{

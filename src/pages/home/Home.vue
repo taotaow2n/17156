@@ -28,7 +28,7 @@
 		},
 		mounted() {
 
-			if(this.$store.getters.shouldGetListData){
+			if(this.$store.getters.shouldGetData){
 				this.$store.dispatch("getIndexInfo")
 			}
 		}

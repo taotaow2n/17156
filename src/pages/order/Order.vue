@@ -1,19 +1,24 @@
 <template>
 	<div>
-		<order-number/>
-		<submit-number/>
-	</div>
-
-
+ 		<order-header/>
+ 		<order-main />
+ 		<order-message />
+ 	</div>
 </template>
 
 <script>
-	import NumberComponent from "./Number";
-	import SubmitComponent from "./Submit";
-	export default {
+
+import HeaderComponent from "./Header";
+import MainComponent from "./Main";
+import MessageComponent from "./Message";
+
+
+export default {
 	components: {
-		 "order-number":NumberComponent,
-         "submit-number":SubmitComponent
+		"order-header": HeaderComponent,
+		"order-main": MainComponent,
+		"order-message": MessageComponent
+
 	}
 }
 </script>

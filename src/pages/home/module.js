@@ -3,6 +3,7 @@ export default {
 	state:{
 		hotsaleInfo:[],
 		hotsaleInfohide:[],
+		weekendInfo: [],
 		swiperInfo:[],
 		iconSwiperInfo:[]
 	},
@@ -30,7 +31,11 @@ export default {
 		},
 		changeIndexInfo: function(state,data){
 			state.swiperInfo = data.swiperInfo;
+			state.weekendInfo = data.weekendInfo;
 			state.iconSwiperInfo = data.iconSwiperInfo
+		},
+		refreshInfo(state,data) {
+			state.weekendInfo.push(...state.weekendInfo);
 		}
 	},
 
@@ -38,7 +43,8 @@ export default {
 	
 	getters:{
 		shouldGetData(state) {
-         if(!state.hotsaleInfo.length && !state.hotsaleInfohide.length  && !state.swiperInfo.length&&!state.iconSwiperInfo.length) {
+         if(!state.hotsaleInfo.length && !state.hotsaleInfohide.length  && !state.swiperInfo.length&&!state.iconSwiperInfo.length&&
+				!state.weekendInfo.length) {
   
 				return true;
 			}else{

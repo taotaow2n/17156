@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import List from '@/pages/list/Home'
 import Order from '@/pages/order/Order'
-
-
 import Detail from '@/pages/detail/Detail'
 import Travel from '@/pages/travel/Travel'
 import City from '@/pages/city/City'
+import Rank from '@/pages/rank/Rank'
+
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -40,6 +40,11 @@ export default new Router({
     	path: '/city',
     	name: 'city',
     	component: City
+    },
+    {
+      path: '/rank',
+      name: 'rank',
+      component: Rank
     }
   ]
 })

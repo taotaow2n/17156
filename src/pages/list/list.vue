@@ -1,7 +1,7 @@
 <template>
  	<div>
  		<div class="header">
- 	 		<div class="header-left iconfont icon-fanhui"></div>
+ 	 		<div class="header-left iconfont icon-fanhui" @click="handleReturnClick"></div>
  	 		<input  class="header-title" @focus="show = true" @blur="show = false" ref="searchValue" placeholder="输入城市/景点">
  	 		</input>
   	 		<div class="header-right">
@@ -82,6 +82,9 @@
   		}),
   		
   		methods: {
+  			handleReturnClick:function() {
+  				this.$router.go(-1);
+  			},
   			
   			handleSearchClick:function(){
   				

@@ -1,0 +1,185 @@
+
+{
+	"ret": true,
+	"data": {
+		"placeInfo": [{
+			"id": 1,
+			"title":"分界洲岛"
+		},{
+			"id": 2,
+			"title":"南山文化旅游区"
+		},{
+			"id": 3,
+			"title":"槟榔谷黎苗文化区"
+		},{
+			"id": 4,
+			"title":"八达岭长城"
+		},{
+			"id": 5,
+			"title":"狮子林"
+		},{
+			"id": 6,
+			"title":"南山文化旅游区"
+		},{
+			"id": 7,
+			"title":"狮子林"
+		},{
+			"id": 8,
+			"title":"分界洲岛"
+		},{
+			"id": 9,
+			"title":"八达岭长城"
+		},{
+			"id": 10,
+			"title":"狮子林"
+		},{
+			"id": 11,
+			"title":"南山文化旅游区"
+		},{
+			"id": 12,
+			"title":"狮子林"
+		},{
+			"id": 13,
+			"title":"分界洲岛"
+		},{
+			"id": 14,
+			"title":"八达岭长城"
+		},{
+			"id": 15,
+			"title":"狮子林"
+		},{
+			"id": 16,
+			"title":"南山文化旅游区"
+		},{
+			"id": 17,
+			"title":"狮子林"
+		},{
+			"id": 18,
+			"title":"分界洲岛"
+		},{
+			"id": 19,
+			"title":"八达岭长城"
+		},{
+			"id": 20,
+			"title":"狮子林"
+		},{
+			"id": 21,
+			"title":"南山文化旅游区"
+		},{
+			"id": 22,
+			"title":"狮子林"
+		},{
+			"id": 23,
+			"title":"分界洲岛"
+		},{
+			"id": 24,
+			"title":"狮子林"
+		},{
+			"id": 25,
+			"title":"分界洲岛"
+		},{
+			"id": 26,
+			"title":"八达岭长城"
+		},{
+			"id": 27,
+			"title":"狮子林"
+		},{
+			"id": 28,
+			"title":"南山文化旅游区"
+		},{
+			"id": 29,
+			"title":"狮子林"
+		},{
+			"id": 30,
+			"title":"分界洲岛"
+		}
+		],
+		"travelListInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg",
+			"describe":"[北京出发]天安门+故宫【赠送珍宝馆】+八达岭长城+鸟巢+水立方一日游"
+		}, {
+			"id": 2,
+			"imgUrl":"http://img1.qunarzz.com/p/tts1/1605/35/f267ae654a8511f7.jpg_110x110_33358754.jpg",
+			"describe":"【休闲纯玩半日游】恭王府.含大戏楼+什刹海+黄包车半日游"
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/p/tts0/1511/7e/f82b6124019d78f7.jpg_110x110_f99e78f5.jpg",
+			"describe":"【配备无线耳麦】故宫+珍宝馆深度纯玩半日游（含导游+门票）"
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/p/tts1/1505/c9/4cdfc7d9932008.jpg_110x110_16d9c8ff.jpg",
+			"describe":"北京八达岭长城＋庆丰包子铺+恭王府+鸟巢.水立方纯玩一日游"
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+			"describe":"【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！"
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/p/tts0/1707/e3/d77d245a07ca4102.jpg_110x110_b3252ca4.jpg",
+			"describe":"【爆款】北京八达岭长城+十三陵定陵含地宫鸟巢纯玩一日游"
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/p/tts1/1611/34/ce613ef51240ad02.jpg_110x110_fb7e8f08.jpg",
+			"describe":"【5大景点】广场+故宫+八达岭长城+鸟巢水立方，北京一日游"
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/p/tts4/1511/bb/0e9192fe4e7fcef7.jpg_110x110_058b32ed.jpg",
+			"describe":"【深度文化游】故宫+恭王府+颐和园+鸟巢水立方纯玩一日游"
+		},{
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/p/tts6/1707/af/2361187e42829e02.jpg_110x110_c1663208.jpg",
+			"describe":"【天天发】北京古北水镇门票日景夜景+往返直通车+导游服务"
+		},{
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/p/tts2/1706/b9/68688c37bace6c02.jpg_110x110_32e4422c.jpg",
+			"describe":"【10点天天发】北京八达岭长城+鸟巢水立方纯玩一日游"
+		}
+		],
+		"weekendInfo" : [{
+			"id" : 1,
+			"imgUrl" : "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+			"link" : "/Order",
+			"name" : "北京温泉排行榜",
+			"desc" : "细数北京温泉，温暖你的冬天"
+		},
+		{
+			"id" : 2,
+			"imgUrl" : "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+			"link" : "/Order",
+			"name" : "寻找北京的皇城范儿",
+			"desc" : "数百年的宫廷庙宇，至今依旧威严霸气"
+		},
+		{
+			"id" : 3,
+			"imgUrl" : "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+			"link" : "/Order",
+			"name" : "北京必游TOP10",
+			"desc" : "来北京必去的景点非这些地方莫属"
+		},
+		{
+			"id" : 4,
+			"imgUrl" : "http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg",
+			"link" : "/Order",
+			"name" : "登高望远秋色佳",
+			"desc" : "山顶满眼彩色，此情此景醉了"
+		},
+		{
+			"id" : 5,
+			"imgUrl" : "http://img1.qunarzz.com/sight/source/1509/28/1bb74b851279e6.jpg_r_640x214_64ebf0ee.jpg",
+			"link" : "/Order",
+			"name" : "秋高气爽去礼佛",
+			"desc" : "秋风伴着美妙经声，品尝秋的另一番滋味"
+		}],
+		"activityimg":[{
+			 "id":1,
+			 "imgUrl":"http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png",
+			 "link":"/"
+		},
+		{
+			 "id":2,
+			 "imgUrl":"http://img1.qunarzz.com/piao/fusion/1710/54/1685d2108b652302.png",
+			 "link":"/"
+		}]
+	}
+}

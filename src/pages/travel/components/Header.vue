@@ -1,6 +1,6 @@
 <template>
  	<header class="header">
- 		<div class="header-left iconfont icon-fanhui"></div>
+ 		<div class="header-left iconfont icon-fanhui" @click="changeBackBtn"></div>
  		<div class="inputbox">
  			<input class="header-input" placeholder="输入城市或景点" @blur="show=false" @focus="show=true" :value="value"/>
  			<span class="iconfont header-delect" v-show="show">&#xe64a;</span>
@@ -24,12 +24,15 @@
 		methods:{
 			remove:function(){
 				this.value = "";
+			},
+			changeBackBtn:function(){
+				this.$router.go(-1);
 			}
 		}
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	.header {
 		height: .88rem;
 		background: #00bcd4;
@@ -38,8 +41,8 @@
 	.header-left {
 		float: left;
 		width: .4rem;
-		padding: 0 .2rem;
-		line-height: .88rem;
+		padding: 0.2rem;
+		line-height: .5rem;
 		font-size: .4rem;
 		color: #fff;
 	}

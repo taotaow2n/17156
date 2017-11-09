@@ -4,6 +4,7 @@
 				<span class="mp-iconfont iconfont icon-tongzhi"></span>
 				<span class="mp-informinfo-text">{{ item.informconnect}}</span>
 				<span class="mp-iconfont iconfont icon-xiangyoujiantou"></span>
+				<span></span>
 			</p>
 	</div>
 </template>
@@ -49,5 +50,7 @@
 	.icon-xiangyoujiantou{
 		float:right;
 		color:#9e9e9e;
+		margin-bottom: .1rem;
+
 	}
 </style>

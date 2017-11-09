@@ -2,13 +2,12 @@
 	<div>
  		<index-header />
  		<index-swiper />
- 		<index-icon-swiper />
+ 		<index-icon-swiper/>
  		<index-activity />
  		<index-hotsale />
  		<index-weekend />
  	</div>
 </template>
-
 <script>
 	import Header from "./components/Header";
 	import Swiper from "./components/Swiper";
@@ -28,11 +27,12 @@
 			"index-weekend": WeekendList
 		},
 		mounted() {
-		
+
 			if(this.$store.getters.shouldGetData){
-				this.$store.dispatch("getIndexInfo");
+				this.$store.dispatch("getIndexInfo")
 			}
-		}	
+		}
+
 	}
 </script>
 

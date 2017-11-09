@@ -1,8 +1,9 @@
+
 import Vuex from 'vuex'
 import Vue from 'vue'
 import home from '../pages/home/module.js'
 import detail from '../pages/detail/module.js'
-
+import travel from '../pages/travel/module.js'
 
 Vue.use(Vuex);
 
@@ -10,6 +11,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
 	modules: {
 		home:home,
-		detail:detail
+		detail:detail,
+		travel:travel
 	}
 });

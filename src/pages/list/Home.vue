@@ -3,7 +3,7 @@
 </template>
 
 <script>
-	import List from "./List";
+	import List from "./list";
 	export default {
 		components: {
 			"home-list":List

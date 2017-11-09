@@ -1,39 +1,39 @@
 <template>
 	<div>
- 		<home-header/>
- 		<swiper-content/>
-
- 		<menu-content/>
- 		<hot-recommend></hot-recommend>
-
- 		<activity-content/>
-
+ 		<index-header />
+ 		<index-swiper />
+ 		<index-icon-swiper/>
+ 		<index-activity />
+ 		<index-hotsale />
+ 		<index-weekend />
  	</div>
 </template>
-
 <script>
+	import Header from "./components/Header";
+	import Swiper from "./components/Swiper";
+	import IconSwiper from "./components/IconSwiper";
+	import Activity from "./components/Activity";
+	import Recommend from "./components/RecommendList";
+	import WeekendList from "./components/WeekendList";
+	
+	export default {
 
-import HeaderComponent from "./Header";
-import SwiperComponent from "./Swiper";
+		components: {
+			"index-header": Header,
+			"index-swiper": Swiper,
+			"index-icon-swiper": IconSwiper,
+			"index-activity": Activity,
+			"index-hotsale": Recommend,
+			"index-weekend": WeekendList
+		},
+		mounted() {
 
-import MenuComponent from "./Menu";
-import HotRecommendComponent from "./HotRecommend";
-
-import ActivityComponent from "./Activity";
-
-
-export default {
-	components: {
-		"home-header": HeaderComponent,
-		"swiper-content": SwiperComponent,
-
-		"menu-content":MenuComponent,
-		"hot-recommend":HotRecommendComponent ,
-
-		"activity-content": ActivityComponent
+			if(this.$store.getters.shouldGetListData){
+				this.$store.dispatch("getIndexInfo")
+			}
+		}
 
 	}
-}
 </script>
 
 <style>

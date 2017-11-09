@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>17156</name>
@@ -6,6 +7,11 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>com.aptana.editor.php.aptanaPhpBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>com.aptana.ide.core.unifiedBuilder</name>
 			<arguments>
 			</arguments>
@@ -13,6 +19,7 @@
 	</buildSpec>
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
+		<nature>com.aptana.editor.php.phpNature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
@@ -25,7 +32,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1509761113988</id>
+=======
+			<id>1509776725848</id>
+>>>>>>> 3b22104e86f69a2d3ecd64ac600e2c43d823642b
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -34,7 +45,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1509800658995</id>
+=======
+			<id>1509932888882</id>
+>>>>>>> 3b22104e86f69a2d3ecd64ac600e2c43d823642b
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -43,7 +58,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1510215063346</id>
+=======
+			<id>1510040181671</id>
+>>>>>>> 3b22104e86f69a2d3ecd64ac600e2c43d823642b
 			<name></name>
 			<type>26</type>
 			<matcher>
@@ -53,3 +72,57 @@
 		</filter>
 	</filteredResources>
 </projectDescription>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>17156</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.aptana.editor.php.aptanaPhpBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.aptana.ide.core.unifiedBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.projects.webnature</nature>
+		<nature>com.aptana.editor.php.phpNature</nature>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1509759628913</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1509776725848</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1509932888882</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>
+>>>>>>> 90b65280c2b7b38eff579ded9b9d598571ef7948

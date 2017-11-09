@@ -33,7 +33,7 @@ export default {
 	},
 	getters:{
 		
-		shouldGetData(state) {
+		shouldGetListData(state) {
 			
 			if(!state.listInfo.length && !state.touristInfo.length) {
 				return true

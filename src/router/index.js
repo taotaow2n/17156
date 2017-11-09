@@ -5,8 +5,10 @@ import List from '@/pages/list/Home'
 import Order from '@/pages/order/Order'
 
 
+import Detail from '@/pages/detail/Detail'
+import Travel from '@/pages/travel/Travel'
+import City from '@/pages/city/City'
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -19,12 +21,25 @@ export default new Router({
       name: 'list',
       component: List
     },
-    {
+     {
     	path:'/order',
     	name:'order',
     	component:Order
+    },
+     {
+    	path:'/detail',
+    	name:'detail',
+    	component:Detail
+    },
+     {
+      path: '/travel',
+      name: 'travel',
+      component: Travel
+    },
+     {
+    	path: '/city',
+    	name: 'city',
+    	component: City
     }
- 
-
   ]
 })

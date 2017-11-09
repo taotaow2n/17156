@@ -22,7 +22,7 @@
 	  				<div class="mp-hotsearch-group">
 	  					<div class="mp-hotsearch-typecon">
 	  						<div class="mp-hotsearch-typeinner">
-	  							<div class="hotsearch-typeinner-img">
+	  							<div class="hotsearch-typeinner-imgOne">
 	  								<img src="http://img1.qunarzz.com/piao/fusion/1511/da/8c3405b0e7d493f7.png" class="mp-hotsearch-typeicon">
 	  							</div>
 	
@@ -39,7 +39,7 @@
 	  				<div class="mp-hotsearch-group">
 	  						<div class="mp-hotsearch-typecon">
 	  							<div class="mp-hotsearch-typeinner">
-	  							  <div class="hotsearch-typeinner-img">
+	  							  <div class="hotsearch-typeinner-imgTwo  ">
 	  								<img src="http://img1.qunarzz.com/piao/fusion/1511/e8/d46972e07444bbf7.png" class="mp-hotsearch-typeicon">
 	  							  </div>
 	  							</div>
@@ -113,7 +113,7 @@
   
   </script>
     
-  <style>
+  <style scoped="scoped">
   	.mp-sight-icon{
   		
   		z-index: 10;
@@ -123,6 +123,8 @@
   		margin-top: 0;
   		overflow: hidden;
   	}
+
+
     .header{
     	
   		height:.88rem;
@@ -226,15 +228,32 @@
   		text-align: center;
   		border-right:1px solid #dce5e7;
    	}
-   	.hotsearch-typeinner-img{
+   	.hotsearch-typeinner-imgOne{
    		
    		z-index: 2;
    		position: absolute;
-   		top: 40%;
+   		top: 30%;
   		left: 30%;
    		width:.3rem;
   		height:.3rem;
    	}
+   	.hotsearch-typeinner-imgTwo{
+   		
+   		z-index: 2;
+   		position: absolute;
+   		top: 30%;
+  		left: 30%;
+   		width:.3rem;
+  		height:.3rem;
+  		margin-top:-0.14rem;
+   	}
+  	.mp-hotsearch-typeinner{
+  		/*position:absolute;*/
+  		float:left;
+  		width:100%;
+  		height:70%;
+  		top:15%;
+  	}
   	.mp-hotsearch-typeicon{
   		
   		width:.3rem;
@@ -242,6 +261,9 @@
   		display: inline-block;
   		background: url(http://img1.qunarzz.com/piao/fusion/1511/da/8c3405b0e7d493f7.png);
   		background-size: contain;
+  		position:relative;
+  		top:50%;
+  		margin-top:.1rem;
   	}
   	.mp-hotsearch-itemcon{
   		

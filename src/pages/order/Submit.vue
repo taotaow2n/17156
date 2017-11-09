@@ -20,7 +20,7 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 	.order-Page{
 		position:fixed;
 		z-index:92;

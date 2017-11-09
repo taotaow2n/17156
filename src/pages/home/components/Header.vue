@@ -6,32 +6,21 @@
 	 			输入城市/景点/游玩主题
 	 		</div>
  		</router-link>
- 		<router-link to="/city">
-	 		<div class="header-right">
-	 			<div class="header-city-wrapper">
-	 				<span class="header-city" >{{place}}</span>
-	 			</div>
-	 		</div>
- 		</router-link>
+ 		<div class="header-right">
+ 			<div class="header-city-wrapper">
+ 				<span class="header-city">北京</span>
+ 			</div>
+ 		</div>
  	</header>
 </template>
 
 <script>
 	export default {
-		data() {
-			return {
-				place:"北京"
-			}
-		},
-		mounted() {
-			if(window.localStorage.city){
-				this.$data.place = window.localStorage.city
-			}
-		}
+		
 	}
 </script>
 
-<style scoped="scoped">
+<style>
 	
 	.header {
 		height: .88rem;

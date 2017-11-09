@@ -1,3 +1,4 @@
+
 <template>
 	<div id="weekend-trip">
 		<h2 class="weekend-title">周末去哪儿</h2>

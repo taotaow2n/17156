@@ -3,72 +3,95 @@
 		<h2 class="mp-hot-title">热销推荐</h2>
 		<div class="mp-hot-content">
 			<ul class="mp-hot-list">
-				<li class="mp-hot-product" v-for="item in hotsaleInfo" :key="item.id">
-					<div class="mp-hot-list-img  image-ready" >
-						<router-link :to="item.link">
-						<img :src="item.imgUrl" alt="">
+				<li class="mp-hot-product">
+					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
+						<img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4
+							ec482b5722.jpg_140x140_80f63803.jpg" alt="故宫">
 						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
-						<div class="mp-hot-list-title" >{{ item.hotListtitle }}</div>
-						<div class="mp-hot-list-describe">{{ item.hotListdescribe }}</div>
+						<div class="mp-hot-list-title">故宫</div>
+						<div class="mp-hot-list-describe">东方宫殿建筑代表，世界宫殿建筑典范</div>
 					</div>
-					<div class="mp-hot-list-price mp-price">￥{{ item.hosListprice }}
-						<b class="mp-price-number">{{ item.hotListpricenumber}}</b>
-						<span class="mp-price-text">{{ item.hotListpricetext }}</span>
+					<div class="mp-hot-list-price mp-price">￥
+						<b class="mp-price-number">40</b>
+						<span class="mp-price-text">起</span>
 					</div>
 				</li>
-			</ul>
-			<ul class="mp-hot-list-hide" v-show="show">
-				<li class="mp-hot-product" v-for="item in hotsaleInfohide" :key="item.id">
-					<div class="mp-hot-list-img  image-ready" >
-						<router-link :to="item.link">
-						<img :src="item.imgUrl" alt="">
+				<li class="mp-hot-product">
+					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
+						<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img
+							.jpg_140x140_97813766.jpg" alt="八达岭长城">
 						</router-link>
 					</div>
 					<div class="mp-hot-list-infos">
-						<div class="mp-hot-list-title" >{{ item.hotListtitle }}</div>
-						<div class="mp-hot-list-describe">{{ item.hotListdescribe }}</div>
+						<div class="mp-hot-list-title">八达岭长城</div>
+						<div class="mp-hot-list-describe">不到长城非好汉</div>
 					</div>
-					<div class="mp-hot-list-price mp-price">￥{{ item.hosListprice }}
-						<b class="mp-price-number">{{ item.hotListpricenumber}}</b>
-						<span class="mp-price-text">{{ item.hotListpricetext }}</span>
+					<div class="mp-hot-list-price mp-price">￥
+						<b class="mp-price-number">25</b>
+						<span class="mp-price-text">起</span>
+					</div>
+				</li>
+				<li class="mp-hot-product">
+					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
+						<img src="http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_
+							140x140_e20be8e0.jpg" alt="颐和园">
+						</router-link>
+					</div>
+					<div class="mp-hot-list-infos">
+						<div class="mp-hot-list-title">颐和园</div>
+						<div class="mp-hot-list-describe">保存完整的一座皇家行宫御苑</div>
+					</div>
+					<div class="mp-hot-list-price mp-price">￥
+						<b class="mp-price-number">22</b>
+						<span class="mp-price-text">起</span>
+					</div>
+				</li>
+				<li class="mp-hot-product">
+					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
+						<img src="http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg
+							_140x140_b05eb1df.jpg" alt="北京欢乐谷">
+						</router-link >
+					</div>
+					<div class="mp-hot-list-infos">
+						<div class="mp-hot-list-title">北京欢乐谷</div>
+						<div class="mp-hot-list-describe">七大主题园区带你畅享北京欢乐谷</div>
+					</div>
+					<div class="mp-hot-list-price mp-price">￥
+						<b class="mp-price-number">11</b>
+						<span class="mp-price-text">起</span>
+					</div>
+				</li>
+				<li class="mp-hot-product">
+					<div class="mp-hot-list-img  image-ready">
+						<router-link to="./detail">
+						<img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_
+							140x140_eae81520.jpg" alt="慕田峪长城">
+						</router-link>
+					</div>
+					<div class="mp-hot-list-infos">
+						<div class="mp-hot-list-title">慕田峪长城</div>
+						<div class="mp-hot-list-describe">秀美长城，关键是人少</div>
+					</div>
+					<div class="mp-hot-list-price mp-price">￥
+						<b class="mp-price-number">19.1</b>
+						<span class="mp-price-text">起</span>
 					</div>
 				</li>
 			</ul>
 			<div class="mp-watch-more">
-				<a hybrid-link="" title="去哪儿门票" v-on:click="moreClick">查看所有产品</a>
+				<a hybrid-link="" title="去哪儿门票" >查看所有产品</a>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-	import {mapState} from "vuex"
-    export default {
-     	data() {
-     		return{
-     			show:false
-     		}
-     	},
-     	computed:mapState({
-  			hotsaleInfo(state) {
-  				return state.home.hotsaleInfo;
-  			},
-  			hotsaleInfohide(state) {
-  				return state.home.hotsaleInfohide;
-  			}
-  		}),
-     	methods: {
-     		moreClick:function() {
-     			if(this.$data.show == false){
-     			  	this.$data.show=true;
-     			}else{
-     				this.$data.show=false;
-     			}
-     		}
-     	}
-    }
 </script>
 
 
@@ -106,28 +129,24 @@
 		background-size:contain;
 	}
 	.image-ready{
-		background:url(http://img2.imgtn.bdimg.com/it/u=1625774398,2803856731&fm=214&gp=0.jpg) no-repeat center;
-		background-size:contain;
+		background: none !important;
 	}
 	.image-ready img{
 		opacity: 1;
-
 	}
 	.mp-hot-list-img img{
 	    vertical-align: top;
 	    transition: opacity 400ms;
 	    width: 1.4rem;
-	    height: 1.4rem;    
+	    height: 1.4rem;
 	}
 	.mp-hot-list-infos{
 		margin-left: 1.6rem;
-		height:.7rem;
 	}
 	.mp-hot-list-title{
 		overflow: hidden;
 	    margin-top: .04rem;
 	    margin-bottom: .1rem;
-	    height:.3rem;
 	    color: #212121;
 	    font-size: .3rem;
 	    white-space: nowrap;
@@ -143,39 +162,20 @@
 	    text-overflow: ellipsis;
 	}
 	.mp-hot-list-price{
-		position:relative;
 	    margin-left: 1.6rem;
 	    color: #ff8300;
-	    margin-top:.2rem;
-	    height:.5rem;
-	    padding-top:.2rem;
 	}
 	.mp-price{
 		font: .24rem "Microsoft yahei","Hiragino sans gb",Arial,sans-serif;
 	}
 	.mp-price-number{
-	    display:inline-block;
-	    position:absolute;
-	    top:.1rem;
-	    left:.15rem;
 	    font-size: .36rem;
-	    margin-left: .1rem;
-	    overflow: hidden;
-	    width:.8rem;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
+	    margin-left: -0.1rem;
 	}
 	.mp-price-text{
-	    position:absolute;
-	    display:inline-block;
-	    top:.2rem;
-	    left:.7rem;
 		color: #9e9e9e;
-   	    font-size:.24rem;
-   	    overflow: hidden;
-	    width:.8rem;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
+   	    font-size: .24rem;
+   	    margin-left: -0.03rem;
 	}
 	.mp-watch-more{
 		height: .88rem;
@@ -189,6 +189,8 @@
 	.mp-hot-content .mp-watch-more{
 		margin-top: -.02rem;
 	}
+	
+	
 	
 	
 </style>

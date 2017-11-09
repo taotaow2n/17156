@@ -1,3 +1,4 @@
+
 import axios from 'axios'
 export default {
 	state:{
@@ -54,6 +55,5 @@ export default {
 	}
 	
 }
-
 
 

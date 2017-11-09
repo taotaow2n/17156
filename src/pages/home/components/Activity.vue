@@ -28,7 +28,7 @@
 <script>
 	
 </script>
-<style scoped="scoped">
+<style>
 	.activity{
 		width: 100%;
 		background: #fff;

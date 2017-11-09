@@ -1,22 +1,32 @@
 <template>
 	<div class="mp-commentinfo-con">
-		<p class="mp-commentinfo-con-inner">
+		<p class="mp-commentinfo-con-inner" v-for="item in CommentInfo" :key="item.id">
 				<span class="mp-iconfont-one iconfont icon-xiaolian"></span>
 				<span class="mp-iconfont-two iconfont ">&#xe644&#xe644&#xe644&#xe644&#xe644</span>
-				<span class="mp-comment-number">5.0分</span>
-				<span class="mp-iconfont-three iconfont ">147314评论&#xe60c;</span>
+				<span class="mp-comment-number">{{ item.commentgrade}}</span>
+				<span class="mp-iconfont-three iconfont ">147314评论&#xe60c</span>
 		</p>
 	</div>
 </template>
 
 <script>
+	import {mapState} from "vuex";
+	export default{
+		
+		computed:mapState({
+  			CommentInfo(state) {
+  				return state.detail.CommentInfo;
+  			}
+  		})
+		
+	}
 </script>
 
 <style scoped>
 	.mp-commentinfo-con{
 		position:relative;
 		padding: .1rem .2rem 0 .2rem;
-		margin-bottom: .1rem;
+		margin-bottom: .2rem;
 		background: #fff;
 	}
 	.mp-commentinfo-con-inner{

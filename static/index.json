@@ -1,0 +1,107 @@
+{
+	"ret":true,
+	"data":{
+		"hotsaleInfo":[{
+			"id":1,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+		    "hotListtitle":"故宫",
+		    "hotListdescribe":"东方宫殿建筑代表，世界宫殿建筑典范",
+		    "hotListprice":"￥",
+		    "hotListpricenumber":40,
+		    "hotListpricetext":"起",
+		    "link": "/detail"
+		 },{
+		 	"id":2,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg",
+		     "hotListtitle":"八达岭长城",
+		     "hotListdescribe":"不到长城非好汉",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":25,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		 },{
+		 	"id":3,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg",
+		     "hotListtitle":"颐和园",
+		     "hotListdescribe":"保存完整的一座皇家行宫御苑",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":22,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		 },{
+		 	"id":4,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg",
+		     "hotListtitle":"北京欢乐谷",
+		     "hotListdescribe":"七大主题园区带你畅享北京欢乐谷",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":11,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		 },{
+		 	"id":5,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg",
+		     "hotListtitle":"慕田峪长城",
+		     "hotListdescribe":"秀美长城，关键是人少",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":19,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		 }],
+		"hotsaleInfohide":[{
+			"id":1,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_110x110_2c172ba2.jpg",
+		     "hotListtitle":"天安门广场",
+		     "hotListdescribe":"庄严的象征",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":20,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		},{
+			"id":2,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1410/ee/5140b8da5ef82cad730c0810fa81371f.water.jpg_110x110_d312e77c.jpg",
+		     "hotListtitle":"坡峰岭",
+		     "hotListdescribe":"满山的红叶 一片秋气息",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":26,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		},{
+			"id":3,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/201403/07/52906a98924b5ab7c47b6119a074a8ad.jpg_110x110_adb49d10.jpg",
+		     "hotListtitle":"玉渡山",
+		     "hotListdescribe":"一览众山小 别有一番风味",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":40,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		},{
+			"id":4,
+			"imgUrl":"//img1.qunarzz.com/sight/p0/201306/13/bdf22f69fab0ee4ec8d65eac.jpg_110x110_3403a6d8.jpg",
+		     "hotListtitle":"八达岭长城缆车",
+		     "hotListdescribe":"一览无余 身临其境",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":99,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		},{
+			"id":5,
+			"imgUrl":"//img1.qunarzz.com/sight/p0/201405/12/51b63883c25f5d87af3c08bb016e2bd7.jpg_110x110_d957be56.jpg",
+		     "hotListtitle":"恭王府",
+		     "hotListdescribe":"浓重的朝代气息 一睹王的风范",
+		     "hotListprice":"￥",
+		     "hotListpricenumber":60,
+		     "hotListpricetext":"起",
+		     "link": "/detail"
+
+		}
+		]
+	}
+}

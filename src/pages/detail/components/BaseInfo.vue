@@ -1,16 +1,16 @@
 <template>
 	<div class="mp-baseInfo">
-		<div class="mp-baseInfo-address">
+		<div class="mp-baseInfo-address" v-for="item in BaseInfoone" :key="item.id">
 			<p class="mp-baseInfo-address-text">
 				<span class="mp-iconfont iconfont icon-dingwei"></span>
-				<span class="mp-baseInfo-addresstext-middle">北京市东城区景山前街4号</span>
+				<span class="mp-baseInfo-addresstext-middle">{{ item.baseDescribe}}</span>
 				<span class="mp-baseInfo-addresstext-right iconfont icon-xiangyoujiantou"></span>
 			</p>
 		</div>
-		<div class="mp-baseInfo-intro">
+		<div class="mp-baseInfo-intro" v-for="item in BaseInfotwo" :key="item.id">
 			<p class="mp-baseInfo-intro-text">
 				<span class="mp-iconfont iconfont icon-tupian"></span>
-				<span class="mp-baseInfo-intro-text-middle">查看景点简介及开放时间</span>
+				<span class="mp-baseInfo-intro-text-middle">{{ item.baseDescribe}}</span>
 				<span class="mp-baseInfo-intro-text-right iconfont icon-xiangyoujiantou"></span>
 			</p>
 		</div>
@@ -18,6 +18,19 @@
 </template>
 
 <script>
+	import {mapState} from "vuex";
+	export default{
+		
+		computed:mapState({
+  			BaseInfoone(state) {
+  				return state.detail.BaseInfoone;
+  			},
+  			BaseInfotwo(state) {
+  				return state.detail.BaseInfotwo;
+  			}
+  		})
+		
+	}
 </script>
 
 <style>

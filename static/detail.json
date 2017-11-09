@@ -1,0 +1,28 @@
+{
+	"ret":true,
+	"data":{
+		"headerInfo":[{
+			"id":1,
+			"imgUrl":"http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+			"headertitle":"故宫(AAAAA景区)",
+			"headerimgnumber":10
+		}],
+		"BaseInfoone":[{
+			"id":1,
+			"baseDescribe":"北京市东城区景山前街4号"
+		}],
+		"BaseInfotwo":[{
+			"id":1,
+			"baseDescribe":"查看景点简介及开放时间"
+		}],
+		"InformInfo":[{
+			"id":1,
+			"informconnect":"因重要活动需要，故宫博物院11月8日（周三）临时闭馆一天，11月9日（周四）正常开放,敬请谅解."
+		}],
+		"CommentInfo":[{
+			"id":1,
+			"commentgrade":"5.0分"
+		}]
+		
+	}
+}

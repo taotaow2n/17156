@@ -16,7 +16,9 @@
 	import Activity from "./components/Activity";
 	import Recommend from "./components/RecommendList";
 	import WeekendList from "./components/WeekendList";
+	
 	export default {
+
 		components: {
 			"index-header": Header,
 			"index-swiper": Swiper,
@@ -24,6 +26,12 @@
 			"index-activity": Activity,
 			"index-hotsale": Recommend,
 			"index-weekend": WeekendList
+		},
+		mounted() {
+		
+			if(this.$store.getters.shouldGetData){
+				this.$store.dispatch("getIndexInfo");
+			}
 		}	
 	}
 </script>

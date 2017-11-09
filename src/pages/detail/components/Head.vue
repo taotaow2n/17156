@@ -1,29 +1,64 @@
 <template>
-   <div class="mp-headfigure">
-   	    <div class="mp-header">
-   	    	<a class="mp-header-left  iconfont icon-fanhui"></a>
-   	         <h1 class="mp-header-title">故宫</h1>
+   <div class="mp-headfigure" >
+   	    <div class="mp-header"  ref="replace" >
+   	    	<router-link to="/#">
+   	    		<a class="mp-header-left  iconfont icon-fanhui"></a>
+   	    	</router-link>
+   	         <h1 class="mp-header-title" >故宫</h1>
    	    </div>
-   		<div class="mp-image-show">
-   			<img  class="mp-image-self"   src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg
-   				_600x330_f922b488.jpg" alt="故宫" />
+   	    <div v-for="item in headerInfo" :key="item.id">
+	   		<div class="mp-image-show">
+	   			<img  class="mp-image-self" :src="item.imgUrl" alt="故宫" />
+	   		</div>
+	   		<div class="mp-head-infos">
+	   			<div class="mp-headinfos-title">{{ item.headertitle}}</div>
+	   			<div class="mp-headinfos-icon">
+	   				<b class="mp-iconfont iconfont icon-icon-test"></b>
+	   				<span class="mp-headinfos-icontext">{{ item.headerimgnumber}}</span>
+	   			</div>
+	   		</div>
    		</div>
-   		<div class="mp-head-infos">
-   			<div class="mp-headinfos-title">故宫(AAAAA景区)</div>
-   			<div class="mp-headinfos-icon">
-   				<b class="mp-iconfont iconfont icon-icon-test"></b>
-   				<span class="mp-headinfos-icontext">10</span>
-   			</div>
-   		</div>
-   		
    </div>
 </template>
 
 <script>
+	import {mapState} from "vuex";
+	export default {
+         
+		data() {
+
+			return {
+				scrollTop: 0
+			}
+		},
+		computed:mapState({
+  			headerInfo(state) {
+  				return state.detail.headerInfo;
+  			}
+  		}),
+		methods: {
+			handleScroll() {
+				this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop; 
+				if( this.scrollTop <= 206) {
+					this.$refs.replace.style.opacity = this.scrollTop / 206;
+				}else {
+					this.$refs.replace.style.opacity = 1;
+				}
+			}
+		},
+		mounted() {
+			window.addEventListener('scroll', this.handleScroll);
+		},
+		destroyed(){
+			window.removeEventListener('scroll', this.handleScroll)
+		}
+	}
+	
   
 </script>
 
 <style scoped>
+
 	.mp-headfigure{
 		position:relative;
 	}
@@ -32,9 +67,9 @@
 		width:100%;
 		top:0;
 		left: 0;
+		opacity: 0;
 	}
 	.mp-header{
-		position:relative;
 		height:.88rem;
 		background:#00bcd4;
 	    z-index: 91;

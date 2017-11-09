@@ -1,8 +1,8 @@
 <template>
 	<div>
  		<index-header />
- 		<index-swiper :swiperInfo="this.$store.state.swiperInfo" />
- 		<index-icon-swiper :iconSwiperInfo="this.$store.state.iconSwiperInfo"/>
+ 		<index-swiper />
+ 		<index-icon-swiper/>
  		<index-activity />
  		<index-hotsale />
  		<index-weekend />
@@ -25,8 +25,8 @@
 			"index-weekend": WeekendList
 		},
 		mounted() {
-			if(!this.$store.state.swiperInfo.length){
-				this.$store.dispatch("getSwiperInfo")
+			if(this.$store.getters.shouldGetData){
+				this.$store.dispatch("getIndexInfo")
 			}
 		}
 	}

@@ -38,8 +38,8 @@
 	.header-left {
 		float: left;
 		width: .4rem;
-		padding: 0 .2rem;
-		line-height: .88rem;
+		padding: 0.2rem;
+		line-height: .5rem;
 		font-size: .4rem;
 		color: #fff;
 	}

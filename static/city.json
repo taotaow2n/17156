@@ -52,6 +52,79 @@
 			"link": "/"
 		}
 		],
+		"alphabetInfo":[{
+			"id": 1,
+			"type":"A"
+		}, {
+			"id": 2,
+			"type":"B"
+		}, {
+			"id": 3,
+			"type":"C"
+		}, {
+			"id": 4,
+			"type":"D"
+		}, {
+			"id": 5,
+			"type":"E"
+		}, {
+			"id": 6,
+			"type":"F"
+		}, {
+			"id": 7,
+			"type":"G"
+		}, {
+			"id": 8,
+			"type":"H"
+		}, {
+			"id": 9,
+			"type":"I"
+		}, {
+			"id": 10,
+			"type":"J"
+		}, {
+			"id": 11,
+			"type":"K"
+		}, {
+			"id": 12,
+			"type":"L"
+		},{
+			"id": 13,
+			"type":"M"
+		}, {
+			"id": 14,
+			"type":"N"
+		}, {
+			"id": 15,
+			"type":"O"
+		}, {
+			"id": 16,
+			"type":"P"
+		}, {
+			"id": 17,
+			"type":"Q"
+		}, {
+			"id": 18,
+			"type":"R"
+		}, {
+			"id": 19,
+			"type":"S"
+		}, {
+			"id": 20,
+			"type":"T"
+		}, {
+			"id": 21,
+			"type":"U"
+		}, {
+			"id": 22,
+			"type":"V"
+		}, {
+			"id": 23,
+			"type":""
+		}, {
+			"id": 24,
+			"type":""
+		}],
 		"foreignInfo": [{
 			"id": 1,
 			"place": "埃塞俄比亚",

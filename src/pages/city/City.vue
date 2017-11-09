@@ -1,7 +1,7 @@
 <template>
 	<div>
  		<home-header @handleChange = "cityChange"/>
- 		<city-list :show="show" :domesticInfo="data" :foreignInfo="data1"/>
+ 		<city-list :show="show" :domesticInfo="data" :foreignInfo="data1" :alphabetInfo="data2"/>
  	</div>
 </template>
 
@@ -14,7 +14,8 @@
 			return {
 				show:true,
 				data:"data",
-				data1:"foreign"
+				data1:"foreign",
+				data2:"alphabet"
 			}
 		},
 		components: {
@@ -33,6 +34,7 @@
 							const {data}  = response.data;
 							this.$data.data = data.domesticInfo;
 							this.$data.data1 = data.foreignInfo;
+							this.$data.data2 = data.alphabetInfo;
 						}
 					})
 		}

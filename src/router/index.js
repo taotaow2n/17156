@@ -5,7 +5,6 @@ import List from '@/pages/list/List'
 import Detail from '@/pages/detail/Detail'
 import Travel from '@/pages/travel/Travel'
 import City from '@/pages/city/City'
-
 Vue.use(Router)
 export default new Router({
   routes: [

@@ -11,19 +11,6 @@
 		  	 	<span class="changeNumber-add iconfont" ref="add" @click="handleClickAdd" >&#xe600;</span>
 		  	</div>
 		</div>	
- 		<!-- <div v-for="(item,index) in userarr">
- 			<div class="message-row">
- 				<label class="row-filed" for="username">游客{{index+1}}</label><input class="row-textinput" name="username" type="text" placeholder="游客姓名"/>
- 				<span class="iconfont customer">&#xe67a;</span>
- 			</div>
- 			<div v-if="index==0" class="message-row">
- 				<span class="filed-menu">+86></span>
- 				<label class="row-filed" for="tel">手机号</label><input class="row-textinput"  name="tel" type="tel" placeholder="请填写手机号"/>
- 			</div>
- 			<div class="message-row">
- 				<label class="row-filed" for="idcard">身份证</label><input class="row-textinput"  name="idcard" type="number" placeholder="请填写正确的身份证号码"/>
- 			</div>
- 		</div> -->
 
  		<ul  class='personMsg' v-for='item in (counter) '>
     		<li>

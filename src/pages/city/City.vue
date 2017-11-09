@@ -1,44 +1,37 @@
 <template>
 	<div>
- 		<home-header @handleChange = "cityChange"/>
- 		<city-list :show="show" :domesticInfo="data" :foreignInfo="data1" :alphabetInfo="data2"/>
+ 		<city-header @change = "handleTypeChange" />	
+ 		<city-domestic v-if="isDomestic" />
+ 		<city-foreign v-else />
  	</div>
 </template>
 
 <script>
-	import HeaderComponent from "./Header";
-	import CityListComponent from "./CityList";
-	import axios from 'axios';
-	export default {
-		data() {
-			return {
-				show:true,
-				data:"data",
-				data1:"foreign",
-				data2:"alphabet"
-			}
-		},
-		components: {
-			"home-header": HeaderComponent,
-			"city-list": CityListComponent,
-		},
-		methods: {
-			cityChange :function(e) {
-				this.show = e.show
-			}
-		},
-		mounted:function(){
-			axios.get('/static/city.json')
-					.then((response)=>{
-						if (response.status === 200) {
-							const {data}  = response.data;
-							this.$data.data = data.domesticInfo;
-							this.$data.data1 = data.foreignInfo;
-							this.$data.data2 = data.alphabetInfo;
-						}
-					})
+
+import HeaderComponent from "./components/CityHeader";
+import DomesticComponent from "./components/CityDomestic";
+import ForeignComponent from "./components/CityForeign";
+
+export default {
+
+	data() {
+		return {
+			isDomestic: true
 		}
+	},
+
+	methods: {
+		handleTypeChange(isDomestic) {
+			this.isDomestic = isDomestic;
+		}
+	},
+
+	components: {
+		"city-header": HeaderComponent,
+		"city-domestic": DomesticComponent,
+		"city-foreign": ForeignComponent
 	}
+}
 </script>
 
 <style>

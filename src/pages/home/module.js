@@ -1,53 +1,40 @@
-import axios from 'axios'
+import axios from 'axios';
+
 export default {
-	state:{
-		hotsaleInfo:[],
-		hotsaleInfohide:[],
-		swiperInfo:[],
-		iconSwiperInfo:[]
+	state: {
+		weekendInfo: [],
+		swiperInfo: []
 	},
 	actions: {
 		getIndexInfo(context) {
 			axios.get('/static/index.json')
-					.then((response)=>{
-						if (response.status === 200) {
-							const {data}  = response.data;
-							context.commit("changehotsaleInfo",data.hotsaleInfo);
-							context.commit("changehotsaleInfohide",data.hotsaleInfohide);
-							context.commit("changeIndexInfo",data);	
-						}
-					})
-			}
-
-	},
-	mutations:{
-		changehotsaleInfo: function(state,data){
-			state.hotsaleInfo = data;
-		},
-		changehotsaleInfohide: function(state,data){
-			state.hotsaleInfohide = data;
-							
-		},
-		changeIndexInfo: function(state,data){
-			state.swiperInfo = data.swiperInfo;
-			state.iconSwiperInfo = data.iconSwiperInfo
+				.then( (response) => {
+					if (response.status === 200) {
+						const { data } = response;
+						//想办法让mutations里的changeWeekendInfo方法执行
+						context.commit("changeIndexInfo",data.data);
+						// this.weekendInfo = data.weekendInfo;
+					}
+				})
 		}
 	},
-
-	
-	
-	getters:{
+	mutations: {
+		changeIndexInfo(state,data) {
+			state.weekendInfo = data.weekendInfo;
+			state.swiperInfo = data.swiperInfo;
+		},
+		refreshInfo(state,data) {
+			state.weekendInfo.push(...state.weekendInfo);
+		}
+	},
+	getters: {
 		shouldGetData(state) {
-         if(!state.hotsaleInfo.length && !state.hotsaleInfohide.length  && !state.swiperInfo.length&&!state.iconSwiperInfo.length) {
-  
-				return true;
-			}else{
+			if (!state.swiperInfo.length &&
+				!state.weekendInfo.length) {
+				return true
+			}else {
 				return false;
 			}
 		}
 	}
-	
 }
-
-
-

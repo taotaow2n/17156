@@ -84,7 +84,7 @@
 		line-height: 1;
 	}
 	#wrapper {
-		height: 860px;
+		height: 690px;
 		overflow: hidden;
 	}
 	.main-Item {

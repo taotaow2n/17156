@@ -12,19 +12,15 @@
 
 
 export default {
-
 	methods: {
 		handleBackBtnClick: function() {
 			this.$router.go(-1);
 		}
 	}
-
-	
-
 }
 </script>
 
-<style scoped>
+<style>
 	.order-header{
 		height: .88rem;
 		background: #00bcd4;

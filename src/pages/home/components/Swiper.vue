@@ -1,50 +1,42 @@
 <template>
-	  <swiper :options="swiperOption" ref="mySwiper">
-    	  <swiper-slide v-for="item in swiperInfo" :key="item.id">
-            <router-link  :to="item.link" >
-        		    <div class="swiper-img-con">
-        			      <img class="swiper-img" :src="item.imgUrl">
-        		    </div>
-            </router-link>
-    	  </swiper-slide>
-    	  <div class="swiper-pagination"  slot="pagination"></div>
-	  </swiper>
+	<swiper :options="swiperOption" ref="mySwiper">
+    	<swiper-slide v-for="item in swiperInfo" :key="item.id">
+            <router-link :to="item.link">
+        		<div class="swiper-img-con">
+        			<img class="swiper-img" :src="item.imgUrl">
+        		</div>
+           </router-link>
+   		</swiper-slide>
+    	<div class="swiper-pagination"  slot="pagination"></div>
+	</swiper>
 </template>
 
 <script>
-	  import { swiper, swiperSlide } from 'vue-awesome-swiper'
-      import {mapState} from 'vuex'
+	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
   	export default {
-    	  data() {
-			      return {
-				        swiperOption: {
-          			    autoplay: 3000,
-          			    direction: 'horizontal',
-         			      autoHeight: true,
-          			    pagination: '.swiper-pagination',
-        			      observeParents: true,
-        		    }
-      		  } 
-    	  },
-
-        computed: mapState({
-            swiperInfo(state) {
-                return state.home.swiperInfo;
-            }
-        }),
-
-        // computed: {
-        //     swiperInfo() {
-        //         return this.$store.state.home.swiperInfo;
-        //     }
-        // },
-
-    	  components: {
-      		    swiper,
-    		    swiperSlide
-		    }
-	    }
+    	data() {
+			return {
+				swiperOption: {
+          			autoplay: 3000,
+          			direction: 'horizontal',
+         			autoHeight: true,
+          			pagination: '.swiper-pagination',
+        			observeParents: true,
+        		}
+      		} 
+    	},
+		
+		computed: {
+			swiperInfo() {
+				return this.$store.state.home.swiperInfo
+			}
+		},
+    	components: {
+      		swiper,
+    		swiperSlide
+		}
+	}
 </script>
 
 <style>

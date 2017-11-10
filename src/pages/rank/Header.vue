@@ -11,7 +11,6 @@
 
 
 export default {
-	
 	methods: {
 		handleBackBtnClick: function() {
 			this.$router.go(-1);
@@ -19,7 +18,6 @@ export default {
 	}
 }
 </script>
-
 
 <style scoped>
 	.rank-header{

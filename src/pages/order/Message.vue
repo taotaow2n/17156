@@ -118,7 +118,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scrop>
 
 	.buyNumber{
 		padding:.3rem .2rem .3rem .2rem;

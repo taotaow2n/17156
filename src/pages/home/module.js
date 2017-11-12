@@ -38,9 +38,6 @@ export default {
 			state.weekendInfo.push(...state.weekendInfo);
 		}
 	},
-
-	
-	
 	getters:{
 		shouldGetData(state) {
          if(!state.hotsaleInfo.length && !state.hotsaleInfohide.length  && !state.swiperInfo.length&&!state.iconSwiperInfo.length&&

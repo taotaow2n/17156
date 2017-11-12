@@ -1,7 +1,7 @@
 <template>
 	<div>
  		<home-header @handleChange = "cityChange"/>
- 		<city-list :show="show" :domesticInfo="data" :foreignInfo="data1" :alphabetInfo="data2"/>
+ 		<city-list :show="show" :domesticInfo="data" :foreignInfo="data1" :alphabetInfo="data2" :hotcityAbroad="data3"/>
  	</div>
 </template>
 
@@ -15,7 +15,8 @@
 				show:true,
 				data:"data",
 				data1:"foreign",
-				data2:"alphabet"
+				data2:"alphabet",
+				data3:"hot"
 			}
 		},
 		components: {
@@ -28,13 +29,14 @@
 			}
 		},
 		mounted:function(){
-			axios.get('/static/city.json')
+			axios.get('/static/city_select.json')
 					.then((response)=>{
 						if (response.status === 200) {
-							const {data}  = response.data;
-							this.$data.data = data.domesticInfo;
-							this.$data.data1 = data.foreignInfo;
-							this.$data.data2 = data.alphabetInfo;
+							this.$data.data = response.data.hotcity;
+							this.$data.data2 = response.data.china;
+							this.$data.data1 = response.data.abroad;
+							this.$data.data3 = response.data.hotcityAbroad;
+							
 						}
 					})
 		}

@@ -16,7 +16,6 @@
 		    		</div>
 	    	</swiper-slide>
 	   		<swiper-slide>
-	    		
 		    		<div class="swiper-img-con" v-for="item in iconSwiperInfo" :key="item.id">
 		    			<router-link :to="item.link" >
 		    			<div class="mp-category-item" data-click="ts_type_nav" data-click-from-value="景点门票" data-click-from-index="0" data-click-dist-city="北京">
@@ -84,7 +83,6 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		
 	}
 	.swiper-img-con img{
 		width:0.68rem;

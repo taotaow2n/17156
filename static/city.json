@@ -1,0 +1,179 @@
+
+{
+	"ret": true,
+	"data": {
+		"domesticInfo": [{
+			"id": 1,
+			"place": "北京",
+			"link": "/"
+		}, {
+			"id": 2,
+			"place": "上海",
+			"link": "/"
+		}, {
+			"id": 3,
+			"place": "南京",
+			"link": "/"
+		}, {
+			"id": 4,
+			"place": "合肥",
+			"link": "/"
+		}, {
+			"id": 5,
+			"place": "乌鲁木齐",
+			"link": "/"
+		}, {
+			"id": 6,
+			"place": "海南",
+			"link": "/"
+		}, {
+			"id": 7,
+			"place": "厦门",
+			"link": "/"
+		}, {
+			"id": 8,
+			"place": "西安",
+			"link": "/"
+		}, {
+			"id": 9,
+			"place": "南京",
+			"link": "/"
+		}, {
+			"id": 10,
+			"place": "杭州",
+			"link": "/"
+		}, {
+			"id": 11,
+			"place": "黄山",
+			"link": "/"
+		}, {
+			"id": 12,
+			"place": "西藏",
+			"link": "/"
+		}
+		],
+		"alphabetInfo":[{
+			"id": 1,
+			"type":"A"
+		}, {
+			"id": 2,
+			"type":"B"
+		}, {
+			"id": 3,
+			"type":"C"
+		}, {
+			"id": 4,
+			"type":"D"
+		}, {
+			"id": 5,
+			"type":"E"
+		}, {
+			"id": 6,
+			"type":"F"
+		}, {
+			"id": 7,
+			"type":"G"
+		}, {
+			"id": 8,
+			"type":"H"
+		}, {
+			"id": 9,
+			"type":"I"
+		}, {
+			"id": 10,
+			"type":"J"
+		}, {
+			"id": 11,
+			"type":"K"
+		}, {
+			"id": 12,
+			"type":"L"
+		},{
+			"id": 13,
+			"type":"M"
+		}, {
+			"id": 14,
+			"type":"N"
+		}, {
+			"id": 15,
+			"type":"O"
+		}, {
+			"id": 16,
+			"type":"P"
+		}, {
+			"id": 17,
+			"type":"Q"
+		}, {
+			"id": 18,
+			"type":"R"
+		}, {
+			"id": 19,
+			"type":"S"
+		}, {
+			"id": 20,
+			"type":"T"
+		}, {
+			"id": 21,
+			"type":"U"
+		}, {
+			"id": 22,
+			"type":"V"
+		}, {
+			"id": 23,
+			"type":""
+		}, {
+			"id": 24,
+			"type":""
+		}],
+		"foreignInfo": [{
+			"id": 1,
+			"place": "埃塞俄比亚",
+			"link": "/"
+		}, {
+			"id": 2,
+			"place": "马尔代夫",
+			"link": "/"
+		}, {
+			"id": 3,
+			"place": "斐济",
+			"link": "/"
+		}, {
+			"id": 4,
+			"place": "美国",
+			"link": "/"
+		}, {
+			"id": 5,
+			"place": "德国",
+			"link": "/"
+		}, {
+			"id": 6,
+			"place": "乌克兰",
+			"link": "/"
+		}, {
+			"id": 7,
+			"place": "意大利",
+			"link": "/"
+		}, {
+			"id": 8,
+			"place": "伦敦",
+			"link": "/"
+		}, {
+			"id": 9,
+			"place": "泰国",
+			"link": "/"
+		}, {
+			"id": 10,
+			"place": "法国",
+			"link": "/"
+		}, {
+			"id": 11,
+			"place": "沙特阿拉伯",
+			"link": "/"
+		}, {
+			"id": 12,
+			"place": "澳大利亚",
+			"link": "/"
+		}
+		]		
+	}
+}
